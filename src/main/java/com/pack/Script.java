@@ -130,11 +130,11 @@ public class Script {
         //js.executeScript("alert('Welcome to 2');");
         //js.executeScript("console.log('2scds32');");
 	   
-	    String data = driver.getPageSource();
+	String data = driver.getPageSource();
 
     System.out.println(data.length());
        
-		Path path
+    Path path
         = Paths.get("C:\\Users\\donga\\eclipse-workspace\\Seleniumm\\Result\\domContent.html");
 
     byte[] arr = data.getBytes();
