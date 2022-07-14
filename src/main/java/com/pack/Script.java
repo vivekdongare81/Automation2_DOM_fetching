@@ -60,12 +60,14 @@ public class Script {
 
     	 //detects AT
     	 //String URL= "https://www.zoho.com/forms/";
+    	
+    	 //-pop ups
+   	      String URL = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiC6qC7ifX4AhUq-jgGHamXBR8QFnoECA8QAQ&url=https%3A%2F%2Fneilpatel.com%2Fblog%2Fwebsite-popup-examples%2F&usg=AOvVaw3scgAVh9PLdPbVhYCBlBaR";
 
     	 //-auto downloads 
     	 //String URL= "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.3.0/selenium-java-4.3.0.zip";
 
-    	 //-pop ups
-    	 String URL = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiC6qC7ifX4AhUq-jgGHamXBR8QFnoECA8QAQ&url=https%3A%2F%2Fneilpatel.com%2Fblog%2Fwebsite-popup-examples%2F&usg=AOvVaw3scgAVh9PLdPbVhYCBlBaR";
+    	 
 
 
     System.setProperty("webdriver.gecko.driver",
@@ -135,7 +137,7 @@ public class Script {
     System.out.println(data.length());
        
     Path path
-        = Paths.get("C:\\Users\\donga\\eclipse-workspace\\Seleniumm\\Result\\domContent.html");
+        = Paths.get("C:\\Users\\donga\\eclipse-workspace\\Seleniumm\\Resulted DOM\\domContent.html");
 
     byte[] arr = data.getBytes();
 
