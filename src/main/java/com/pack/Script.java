@@ -114,7 +114,7 @@ public class Script {
                 return;
             case 200: {
                 if (!ContentType.contains("text/html")) {
-                    System.out.println("Link is download link");
+                    System.out.println("Link is downloadable");
                     return;
                 }
             }
