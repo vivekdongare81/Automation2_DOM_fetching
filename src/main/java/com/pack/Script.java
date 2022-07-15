@@ -57,17 +57,19 @@ public class Script {
 
     	 //broken
       	 //String URL = "https://www.zoho.com/unknown";
-
+         
     	 //detects AT
     	 //String URL= "https://www.zoho.com/forms/";
+         //String URL ="https://sujathaiyer-7920.zcodeusers.com/pricing.html";   
     	
     	 //-pop ups
-   	      String URL = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiC6qC7ifX4AhUq-jgGHamXBR8QFnoECA8QAQ&url=https%3A%2F%2Fneilpatel.com%2Fblog%2Fwebsite-popup-examples%2F&usg=AOvVaw3scgAVh9PLdPbVhYCBlBaR";
+   	      //String URL = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiC6qC7ifX4AhUq-jgGHamXBR8QFnoECA8QAQ&url=https%3A%2F%2Fneilpatel.com%2Fblog%2Fwebsite-popup-examples%2F&usg=AOvVaw3scgAVh9PLdPbVhYCBlBaR";
 
     	 //-auto downloads 
-    	 //String URL= "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.3.0/selenium-java-4.3.0.zip";
-
-    	 
+    	 String URL= "https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.3.0/selenium-java-4.3.0.zip";
+  	
+    	//random
+   	      //String URL = "https://linkdoctor.io/create-download-link/";
 
 
     System.setProperty("webdriver.gecko.driver",
@@ -91,7 +93,7 @@ public class Script {
      
         URL url = new URL(URL);
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-        connection.setRequestMethod("GET");
+        connection.setRequestMethod("HEAD");
         connection.connect();
 
         ResponseCode = connection.getResponseCode();
